@@ -9,6 +9,7 @@
     width: 1600px;
     min-height: 30px;
     background-color: #fff;
+    height: 70px;
 }
 
 .trongdautrang {
@@ -49,7 +50,7 @@
 }
 
 .khung-menu {
-    width: 1250px;
+    width: 1230px;
     min-height: 46px;
     top: 13px;
     margin-left: 185px;
@@ -66,48 +67,12 @@
 
 /* Ẩn danh sách sản phẩm ban đầu */
 .productList {
-    list-style: none;
     display: none;
-    border: 1px solid;
-    border-radius: 9px;
-    box-shadow: #fff;
-    box-shadow: 0px 4px 40px 0px rgba(0, 0, 0, 0.12);
-
-
-}
-
-
-.productList :hover {
-
-    color: gray;
-
-    border: 1px;
-    border-radius: 4px;
-}
-
-.productList li {
-    display: inline-block;
-    width: 120px;
-    height: 40px;
-    line-height: 40px;
-    margin-left: -5px;
-}
-
-.productList li a {
-    text-decoration: none;
-    font-family: Nuckle;
-    font-size: 20px;
-    font-weight: 539;
-    line-height: 19px;
-    letter-spacing: 0.01em;
-    text-align: left;
-    color: black;
-    margin-right: 9px;
 }
 
 .menu {
     margin-left: 100px;
-    margin-top: 22px;
+    margin-top: 18px;
 }
 
 .toggleButton {
@@ -191,24 +156,23 @@
     margin-left: 40px;
     width: 105px;
     height: fit-content;
-    /* Hug (45px) - sử dụng fit-content để làm nút co dãn theo nội dung bên trong */
     top: 13px;
     left: 1310px;
     padding: 13px 0;
-    /* padding: top/bottom 13px, left/right 0px */
     border-radius: 10px;
     background: linear-gradient(270deg, rgba(77, 94, 246, 0.2) 0%, rgba(246, 77, 77, 0.2) 100%);
     text-align: center;
-    /* Canh giữa văn bản */
     line-height: 1;
-    /* Để đảm bảo văn bản nằm giữa theo chiều dọc */
     cursor: pointer;
-    /* Con trỏ khi di chuột vào */
     color: black;
 }
 
 .login a {
     text-decoration: none;
+}
+.login:hover{
+    color: #FFF;
+    background: var(--button-gradient, linear-gradient(270deg, #4D5EF6 0%, #F64D4D 100%));
 }
 
 
@@ -222,7 +186,7 @@
 }
 
 .slideshow-container {
-    max-width: 1200px;
+    max-width: 800px;
     position: relative;
     margin: auto;
     border: 5px;
@@ -264,12 +228,12 @@
 
 .prev {
     left: -75px;
-    border-radius: 20px;
+    border-radius: 60px;
 }
 
 .next {
     right: -75px;
-    border-radius: 20px;
+    border-radius: 60px;
 }
 
 .prev:hover,
@@ -288,10 +252,8 @@
     border-radius: 10px;
     background-color: rgb(239, 234, 234);
     display: flex;
-    flex-wrap: wrap;
-    /* Cho phép các khung-moi xuống dòng khi không đủ không gian */
-    gap: 20px;
-    /* Khoảng cách giữa các khung-moi */
+    flex-wrap: wrap; /* Cho phép các khung-moi xuống dòng khi không đủ không gian */
+  gap: 20px; /* Khoảng cách giữa các khung-moi */
 }
 
 .trong-duoi-khung {
@@ -302,14 +264,12 @@
     border-radius: 10px;
     background-color: rgb(239, 234, 234);
     display: flex;
-    flex-wrap: wrap;
-    /* Cho phép các khung-moi xuống dòng khi không đủ không gian */
-    gap: 20px;
-    /* Khoảng cách giữa các khung-moi */
-}
-
-
-.cac-loai-dien-thoai p {
+    flex-wrap: wrap; /* Cho phép các khung-moi xuống dòng khi không đủ không gian */
+    gap: 20px; /* Khoảng cách giữa các khung-moi */
+  }
+  
+  
+  .cac-loai-dien-thoai p {
     color: black;
     font-family: Nuckle;
     font-size: 28px;
@@ -318,18 +278,16 @@
     letter-spacing: 0em;
     text-align: left;
     margin: 0;
-    padding-bottom: 20px;
-    /* Tạo khoảng cách giữa "CÁC LOẠI ĐIỆN THOẠI" và "cac-khung-moi" */
-}
-
-.cac-khung-moi {
+    padding-bottom: 20px; /* Tạo khoảng cách giữa "CÁC LOẠI ĐIỆN THOẠI" và "cac-khung-moi" */
+  }
+  
+  .cac-khung-moi {
     display: flex;
     gap: 20px;
-    justify-content: center;
-    /* Căn giữa các khung-moi */
-}
-
-.khung-moi {
+    justify-content: center; /* Căn giữa các khung-moi */
+  }
+  
+  .khung-moi {
     width: 135.89px;
     height: 180px;
     border-radius: 10px;
@@ -340,15 +298,15 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-}
-
-.khung-moi img {
+  }
+  
+  .khung-moi img {
     width: 136px;
     height: 136px;
-}
-
-.khung-moi p {
-    font-family: Nuckle;
+  }
+  
+  .khung-moi p {
+    font-family: 'Nuckle',sans-serif;
     font-size: 16px;
     font-weight: 539;
     line-height: 19px;
@@ -356,106 +314,74 @@
     text-align: center;
     color: rgba(30, 30, 30, 1);
     margin: 0;
-}
+  }
 
-.khung-moi {
-    /* Các thuộc tính khác */
-    transition: transform 0.3s ease;
-    /* Thêm hiệu ứng chuyển động */
-}
-
-.khung-moi:hover {
-    transform: translateY(-4px);
-    /* Dịch chuyển lên 4px khi hover */
-}
-
-.duoi-cac-loai-dt {
-    width: 1229px;
-    /* Chiều rộng cố định */
-    height: fit-content;
-    /* Chiều cao sẽ phụ thuộc vào nội dung bên trong */
-    min-height: 50px;
-    /* Chiều cao tối đa là 50px */
-    border-radius: 10px;
-    /* Các thuộc tính khác tùy thuộc vào thiết kế của bạn */
-    background-color: #fff;
-    /* Màu nền */
-    padding: 1px;
-    /* Lề bên trong */
-    position: relative;
-}
-
-.xem-them {
-    width: fit-content;
-    /* Kích thước của nút chỉ đủ để bao bọc nội dung */
-    /* Các thuộc tính khác */
-    position: absolute;
-    /* Để đặt nút tại vị trí cụ thể bên trong div */
-    left: 50%;
-    /* Đưa nút về giữa theo chiều ngang */
-    transform: translateX(-50%);
-    /* Dịch chuyển nút đi -50% chiều rộng của chính nó, giữa theo chiều ngang */
-    bottom: 10px;
-    /* Khoảng cách từ dưới */
-    /* Các thuộc tính về font */
-    font-family: Nuckle;
-    font-size: 18px;
-    font-weight: 591;
-    line-height: 22px;
-    letter-spacing: 0em;
-    text-align: center;
-    /* Các thuộc tính về giao diện */
-    padding: 8px 16px;
-    /* Lề nội dung */
-    border: none;
-    /* Loại bỏ viền */
-    border-radius: 5px;
-    /* Bo tròn viền */
-    background-color: #fff;
-    /* Màu nền */
-    color: black;
-    /* Màu chữ */
-    cursor: pointer;
-    /* Thay đổi hình dạng con trỏ khi di chuột vào */
-    transition: background-color 0.3s ease;
-    /* Hiệu ứng khi hover */
-}
-
-.xem-them:hover {
-    background-color: #f0f0f0;
-    /* Màu nền khi hover */
-}
-
-.duoi-xem-them {
+  /* .khung-moi {
+    transition: transform 0.3s ease; 
+  } */
+  
+  .khung-moi:hover {
+    /* transform: translateY(-4px); */
+    border: 1px solid var(--button-gradient, #4D5EF6);
+    background: #FCFFFC;
+    box-shadow: 1px 1px 10px 0px rgba(0, 0, 0, 0.10);
+  }
+  
+  .duoi-cac-loai-dt button{
+    border:none;
+    display: flex;
     width: 1230px;
-    /* Chiều rộng */
-    height: 942px;
-    /* Chiều cao */
+    height: 50px;
+    padding: 17px 0px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 10px;
+    background: var(--background-white, #FFF);
+  }
+  
+  .duoi-cac-loai-dt button:hover{
+    border:none;
+    display: flex;
+    width: 1230px;
+    height: 50px;
+    padding: 17px 0px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 10px;
+    background: var(--background-white, #FFF);
+    border: 1.5px solid var(--button-gradient,  #4D5EF6);
+  }
+
+  .duoi-xem-them {
+    width: 1230px; /* Chiều rộng */
+    height: 942px; /* Chiều cao */
     /* Các thuộc tính khác tùy thuộc vào thiết kế của bạn */
     border-radius: 10px;
-    background-color: #f0f0f0;
-    /* Màu nền */
+    background-color: #f0f0f0; /* Màu nền */
     padding: 20px 20px;
     margin: 30px;
-}
-
-.tieu-de {
+  }
+  .tieu-de {
     color: black;
-    font-family: Nuckle;
+    font-family:'Nuckle', sans-serif;
     font-size: 28px;
     font-weight: 700;
     line-height: 30px;
     letter-spacing: 0em;
     text-align: left;
-    margin: 0;
-    /* Loại bỏ khoảng cách mặc định */
+    margin: 0; /* Loại bỏ khoảng cách mặc định */
     margin-bottom: 20px;
-}
-
-
+  }
+  
 .khung-container {
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
-    /* Khoảng cách giữa các khung */
-}
+    gap: 10px; /* Khoảng cách giữa các khung */
+  }
+  
+ 
+  
+  
+  

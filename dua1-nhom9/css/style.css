@@ -151,7 +151,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
+    transition: transform .5s;
 }
 
 .login {
@@ -386,5 +386,95 @@
   
   /* product card */
 
-  
-  
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Vina+Sans&display=swap');
+
+  .giohang span{
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #4D5EF6;
+    border-radius: 50%;
+    top: 50%;
+    right: -20px;
+  }
+
+  /* card-tab */
+
+  .card-tab{
+    width: 400px;
+    background: var(--button-gradient-20, linear-gradient(270deg, rgba(77, 94, 246, 0.20) 0%, rgba(246, 77, 77, 0.20) 100%));
+    color: #4D5EF6;
+    position: fixed;
+    inset: 0 -400 0 auto;
+    display: grid;
+    grid-template-rows: 70px 1fr 70px;
+    transform: translate(-120px);
+   }
+   body.showcard .card-tab{
+    inset: 0 0 0 auto;
+   }
+   body.showcard .giohang{
+    /* transform: translateX(-250px); */
+   }
+   .card-tab h1{
+    padding: 20px;
+    margin: 0;
+    font-weight: 300;
+   }
+   .card-tab .btn{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+   }
+   .card-tab .btn button{
+    margin-left: 40px;
+    width: 200px;
+    height: fit-content;
+    top: 13px;
+    left: 1310px;
+    padding: 13px 0;
+    border-radius: 10px;
+    background: linear-gradient(270deg, rgba(77, 94, 246, 0.2) 0%, rgba(246, 77, 77, 0.2) 100%);
+    text-align: center;
+    line-height: 1;
+    cursor: pointer;
+    color: black;
+   }
+   .card-tab .btn button:hover{
+    color: #FFF;
+    background: var(--button-gradient, linear-gradient(270deg, #4D5EF6 0%, #F64D4D 100%));
+   }
+   .card-tab .listCard .item img{
+    width: 100%;
+    margin-left:10px ;
+   }
+   .card-tab .listCard .item{
+    display: grid;
+    grid-template-columns: 70px 150px 50px 1fr;
+    gap: 10px;
+    text-align: center;
+    align-items: center;
+   }
+   .listCard .quantity span{
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background-color: #eee;
+    border-radius: 50%;
+    color: #555;
+    cursor: pointer;
+   }
+  .listCard .quantity span:nth-child(2){
+    background-color: transparent;
+    color: #eee;
+    cursor: auto;
+  }
+  .listCard .item:nth-child(even){
+    background-color: #eee1;
+  }
+  .listCard{
+    overflow: auto;
+  }
+  .listCard::-webkit-scrollbar{
+    width: 0;
+  }

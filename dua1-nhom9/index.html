@@ -10,7 +10,7 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 
-<body>
+<body class="">
     <div class="main">
         <div class="dautrang">
             <div class="trongdautrang">
@@ -51,13 +51,16 @@
                         <a href="#"><img src="img/Vector.png" alt=""></a>
                     </div>
                     <div class="giohang">
-                        <a href="#"><img src="img/shopping_cart.png" alt=""></a>
+                        <a href="#" class="icon-card"><img src="img/shopping_cart.png" alt=""></a>
+                        <span>0</span>
                     </div>
                     <div class="login">
                         <a href="#">Login</a>
                     </div>
                 </div>
             </div>
+            
+            
             <div class="khung">
                 <div class="slideshow-container">
                     <div class="mySlides">
@@ -125,14 +128,30 @@
                     <p class="tieu-de">ĐIỆN THOẠI NỔI BẬT NHẤT</p>
                     <div class="khung-container">
                       <!-- 10 khung được chia thành 5 hàng 2 cột -->
-                        
+                        <div class="item">
+                            <img src="img/xiaomi.png" alt="">
+                            <h2>Xiaomi</h2>
+                            <div class="price">200$</div>
+                            <button class="addCard">
+                                Thêm vào giỏ hàng
+                            </button>
+                        </div>
                     </div>
                   </div>
                   
             </div>
         </div>
     </div>
-
+    <div class="card-tab">
+        <h1>Giỏ Hàng</h1>
+        <div class="listCard">
+            
+        </div>
+        <div class="btn">
+            <button class="close">Đóng</button>
+            <button class="checkOut">Thanh Toán</button>
+        </div>
+    </div>
 
     <script>
         $(document).ready(function () {
@@ -175,6 +194,7 @@
             }, 2000);
         });
     </script>
+    <script src="scrip/shopingcard.js"></script>
 
 </body>
 

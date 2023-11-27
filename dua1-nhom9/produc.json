@@ -1,0 +1,26 @@
+[
+    {
+        "id":1,
+        "name":"iPhone 1",
+        "price":100,
+        "image":"img/iPhone.png"
+    },
+    {
+        "id":2,
+        "name":"iPhone 2",
+        "price":200,
+        "image":"img/iPhone.png"
+    },
+    {
+        "id":3,
+        "name":"iPhone 3",
+        "price":300,
+        "image":"img/iPhone.png"
+    },
+    {
+        "id":4,
+        "name":"iPhone 4",
+        "price":400,
+        "image":"img/iPhone.png"
+    }
+]

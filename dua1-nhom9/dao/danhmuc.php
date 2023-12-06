@@ -42,7 +42,7 @@ require_once 'pdo.php';
  * @throws PDOException lỗi truy vấn
  */
 function danhmuc_all(){
-    $sql = "SELECT * FROM danhmuc ORDER BY stt DESC";
+    $sql = "SELECT * FROM danhmucsanpham ORDER BY idDM DESC";
     return pdo_query($sql);
 }
 // /**

@@ -23,18 +23,28 @@ require_once 'pdo.php';
 //     }
 // }
 
-function get_dssp_new($limi){
-    $sql = "SELECT * FROM sanpham ORDER BY id DESC limit ".$limi;
+//sp moi
+function get_dssp_moi(){
+    $sql = "SELECT * FROM sanpham ORDER BY idSP DESC";
     return pdo_query($sql);
 }
+
+//sp co nhieu view nhat
+function get_dssp_view(){
+    $sql = "SELECT * FROM sanpham ORDER BY view DESC LIMIT 8";
+    return pdo_query($sql);
+}
+
+function get_dmsp_view(){
+    $sql = "SELECT * FROM danhmucsanpham ORDER BY idDM ASC";
+    return pdo_query($sql);
+}
+
 function get_dssp_best($limi){
     $sql = "SELECT * FROM sanpham WHERE bestseller=1 ORDER BY id DESC limit ".$limi;
     return pdo_query($sql);
 }
-function get_dssp_view($limi){
-    $sql = "SELECT * FROM sanpham ORDER BY view DESC limit ".$limi;
-    return pdo_query($sql);
-}
+
 
 function get_dssp($iddm,$limi){
     $sql = "SELECT * FROM sanpham WHERE 1";

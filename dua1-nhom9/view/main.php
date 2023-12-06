@@ -1,3 +1,42 @@
+<?php 
+    $html_dssp_new='';
+    foreach ($dssp_moi as $sp) {
+        extract($sp);
+        $html_dssp_new.='
+                <div class="khung-moi">
+                <img src="html-css/img/'.$image.'" alt="Hình ảnh" width="136" height="136">
+                <p>'.$name.'</p>
+            </div>';
+    }
+    
+
+    $html_dssp_view='';
+
+    foreach ($dssp_view as $spv) {
+    extract($spv);
+    $html_dssp_view.='    <div class="trong-khung-container">
+    <img class="imgsp" src="html-css/img/'.$image.'" alt="">
+    <p>'.$name.'</p>
+    <div class="mo-ta">
+        '.$mota.'
+    </div>
+    <div class="gia">'.$giasp.'đ
+    </div>
+    <form action="index.php?pg=addcart" method="post">
+    <input type ="hidden" name="tensp" value="'.$name.'">
+    <input type ="hidden" name="image" value="'.$image.'">
+    <input type ="hidden" name="giasp" value="'.$giasp.'">
+    <input type ="hidden" name="soLuong" value="1">
+    <button  class="nut-mua-hang">Mua Ngay</button>
+    <button type="submit" name="addcart"><div class="gio-hang-mua"><img src="html-css/img/shopping_cart.png" alt=""></div></button> 
+     </form>   
+    </div>';
+    }
+
+    $html_dmsp_view='';
+    extract($dmsp_view);
+    $html_dmsp_view.='<p class="tieu-de">'.$name.'</p>';
+?>
 <div class="khung">
     <div class="slideshow-container">
         <div class="mySlides">
@@ -22,39 +61,8 @@
         </div>
         <div class="cac-khung-moi">
             <!-- Các khung-moi nằm dưới phần tiêu đề "CÁC LOẠI ĐIỆN THOẠI" -->
-            <div class="khung-moi">
-                <img src="html-css/img/iPhone.png" alt="Hình ảnh" width="136" height="136">
-                <p>iPhone 11</p>
-            </div>
-            <div class="khung-moi">
-                <img src="html-css/img/iPhone.png" alt="Hình ảnh" width="136" height="136">
-                <p>iPhone 12</p>
-            </div>
-            <!-- Thêm các khung-moi khác tương tự -->
-            <div class="khung-moi">
-                <img src="html-css/img/iPhone.png" alt="Hình ảnh" width="136" height="136">
-                <p>iPhone 12</p>
-            </div>
-            <div class="khung-moi">
-                <img src="html-css/img/iPhone.png" alt="Hình ảnh" width="136" height="136">
-                <p>iPhone 12</p>
-            </div>
-            <div class="khung-moi">
-                <img src="html-css/img/iPhone.png" alt="Hình ảnh" width="136" height="136">
-                <p>iPhone 12</p>
-            </div>
-            <div class="khung-moi">
-                <img src="html-css/img/iPhone.png" alt="Hình ảnh" width="136" height="136">
-                <p>iPhone 12</p>
-            </div>
-            <div class="khung-moi">
-                <img src="html-css/img/iPhone.png" alt="Hình ảnh" width="136" height="136">
-                <p>iPhone 12</p>
-            </div>
-            <div class="khung-moi">
-                <img src="html-css/img/iPhone.png" alt="Hình ảnh" width="136" height="136">
-                <p>iPhone 12</p>
-            </div>
+           <?= $html_dssp_new?>
+        
         </div>
         <!-- Phần còn lại của "trong-duoi-khung" -->
         <div class="duoi-cac-loai-dt">
@@ -64,120 +72,14 @@
     </div>
 
     <div class="duoi-xem-them">
-        <p class="tieu-de">ĐIỆN THOẠI NỔI BẬT NHẤT</p>
+        <?=$html_dmsp_view?>
         <div class="khung-container">
             <!-- 10 khung được chia thành 5 hàng 2 cột -->
-            <div class="trong-khung-container">
-                <img src="html-css/img/Anhmaytinh.png" alt="">
-                <p>iPhone 15-256G</p>
-                <div class="mo-ta">
-                    Apple Airpods Pro
-                    simsiz quloqchin , Oq rangda
-                </div>
-                <button class="nut-mua-hang">Mua Ngay</button>
-                <div class="gio-hang-mua"><img src="html-css/img/shopping_cart.png" alt=""></div>
-            </div>
-
-            <div class="trong-khung-container">
-                <img src="html-css/img/Anhmaytinh.png" alt="">
-                <p>iPhone 15-256G</p>
-                <div class="mo-ta">
-                    Apple Airpods Pro
-                    simsiz quloqchin , Oq rangda
-                </div>
-                <button class="nut-mua-hang">Mua Ngay</button>
-                <div class="gio-hang-mua"><img src="html-css/img/shopping_cart.png" alt=""></div>
-            </div>
-
-            <div class="trong-khung-container">
-                <img src="html-css/img/Anhmaytinh.png" alt="">
-                <p>iPhone 15-256G</p>
-                <div class="mo-ta">
-                    Apple Airpods Pro
-                    simsiz quloqchin , Oq rangda
-                </div>
-                <button class="nut-mua-hang">Mua Ngay</button>
-                <div class="gio-hang-mua"><img src="html-css/img/shopping_cart.png" alt=""></div>
-            </div>
-
-            <div class="trong-khung-container">
-                <img src="html-css/img/Anhmaytinh.png" alt="">
-                <p>iPhone 15-256G</p>
-                <div class="mo-ta">
-                    Apple Airpods Pro
-                    simsiz quloqchin , Oq rangda
-                </div>
-                <button class="nut-mua-hang">Mua Ngay</button>
-                <div class="gio-hang-mua"><img src="html-css/img/shopping_cart.png" alt=""></div>
-            </div>
-
-            <div class="trong-khung-container">
-                <img src="html-css/img/Anhmaytinh.png" alt="">
-                <p>iPhone 15-256G</p>
-                <div class="mo-ta">
-                    Apple Airpods Pro
-                    simsiz quloqchin , Oq rangda
-                </div>
-                <button class="nut-mua-hang">Mua Ngay</button>
-                <div class="gio-hang-mua"><img src="html-css/img/shopping_cart.png" alt=""></div>
-            </div>
-
-            <div class="trong-khung-container">
-                <img src="html-css/img/Anhmaytinh.png" alt="">
-                <p>iPhone 15-256G</p>
-                <div class="mo-ta">
-                    Apple Airpods Pro
-                    simsiz quloqchin , Oq rangda
-                </div>
-                <button class="nut-mua-hang">Mua Ngay</button>
-                <div class="gio-hang-mua"><img src="html-css/img/shopping_cart.png" alt=""></div>
-            </div>
-
-            <div class="trong-khung-container">
-                <img src="html-css/img/Anhmaytinh.png" alt="">
-                <p>iPhone 15-256G</p>
-                <div class="mo-ta">
-                    Apple Airpods Pro
-                    simsiz quloqchin , Oq rangda
-                </div>
-                <button class="nut-mua-hang">Mua Ngay</button>
-                <div class="gio-hang-mua"><img src="html-css/img/shopping_cart.png" alt=""></div>
-            </div>
-
-            <div class="trong-khung-container">
-                <img src="html-css/img/Anhmaytinh.png" alt="">
-                <p>iPhone 15-256G</p>
-                <div class="mo-ta">
-                    Apple Airpods Pro
-                    simsiz quloqchin , Oq rangda
-                </div>
-                <button class="nut-mua-hang">Mua Ngay</button>
-                <div class="gio-hang-mua"><img src="html-css/img/shopping_cart.png" alt=""></div>
-            </div>
-
-            <div class="trong-khung-container">
-                <img src="html-css/img/Anhmaytinh.png" alt="">
-                <p>iPhone 15-256G</p>
-                <div class="mo-ta">
-                    Apple Airpods Pro
-                    simsiz quloqchin , Oq rangda
-                </div>
-                <button class="nut-mua-hang">Mua Ngay</button>
-                <div class="gio-hang-mua"><img src="html-css/img/shopping_cart.png" alt=""></div>
-            </div>
-
-            <div class="trong-khung-container">
-                <img src="html-css/img/Anhmaytinh.png" alt="">
-                <p>iPhone 15-256G</p>
-                <div class="mo-ta">
-                    Apple Airpods Pro
-                    simsiz quloqchin , Oq rangda
-                </div>
-                <button class="nut-mua-hang">Mua Ngay</button>
-                <div class="gio-hang-mua"><img src="html-css/img/shopping_cart.png" alt=""></div>
-            </div>
+            <?=$html_dssp_view?>
         </div>
+        
     </div>
-</div>
-</div>
-</div>
+    
+
+   
+

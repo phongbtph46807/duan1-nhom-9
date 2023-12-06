@@ -10,7 +10,7 @@
 </head>
     
 <body>
-    <div class="main">
+<div class="main">
         <div class="dautrang">
             <div class="trongdautrang">
                 <img class="iconemail" src="html-css/img/email.png" alt="">
@@ -22,21 +22,25 @@
             <div class="trongdautrang-1">
                 <div class="khung-menu">
                     <div class="logo">
-                        <img src="html-css/img/logo-trang-chu.png" alt="" width="166" height="80">
+                        <a href="index.php"><img src="html-css/img/logo-trang-chu.png" alt="" width="166" height="80"></a>
                     </div>
                     <div class="menu">
                         <div>
                             <button class="toggleButton">
                                 &#9776;
-                                Danh Sách Sản Phẩm
+                                Danh Mục
                             </button>
                         </div>
                         <ul class="productList">
-                            
+
                             <li><a href="#"></i>iPhone</a></li>
                             <li><a href="#"></i>SamSumg</a></li>
                             <li><a href="#">Xiaomi</a></li>
                             <li><a href="#">Oppo</a></li>
+                            <li><a href="#">Oppo</a></li>
+                            <li><a href="#">Oppo</a></li>
+                            <li><a href="#">Oppo</a></li>
+                            
                             <!-- Thêm các sản phẩm khác cần hiển thị -->
                         </ul>
                     </div>
@@ -53,8 +57,8 @@
                         <a href="#"><img src="html-css/img/shopping_cart.png" alt=""></a>
                     </div>
                     <div class="login">
-                    <a href="login.php">Login</a>
+                        <a href="index.php?pg=dangnhap-dangki">Login</a>
                     </div>
-                   
+
                 </div>
             </div>
